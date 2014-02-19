@@ -1,0 +1,59 @@
+<?php
+defined('MUDPUPPY') or die('Restricted');
+
+/**
+ * The data object for $[CLASS]
+ * This class was auto generated, DO NOT remove or edit # comments
+ * #BEGIN MAGIC PROPERTIES
+ * #END MAGIC PROPERTIES
+ */ 
+class $[CLASS] extends DataObject {
+	
+	protected function loadDefaults() {
+		// auto-generated code to create columns with default values based on DB schema. DO NOT EDIT.
+		// #BEGIN DEFAULTS
+		// #END DEFAULTS
+		
+		// change defaults here if you want user-defined default values
+		// $this->updateColumnDefault('column', DEFAULT_VALUE, NOT_NULL);
+	}	
+	
+	public static function getTableName() {
+		return '$[TABLE]';
+	}
+
+	/**
+	 * @param int $id
+	 * @return $[CLASS]
+	 */
+	public static function get($id) {
+		$statement = App::getDBO()->prepare('SELECT * FROM ' . self::getTableName() . ' WHERE id=?');
+		$statement->bindValue(1, $id, PDO::PARAM_INT);
+		$result = App::getDBO()->query();
+		$dataObject = null;
+		if ($result && ($row = $result->fetch(PDO::FETCH_ASSOC))) {
+			$dataObject = new $[CLASS]($row);
+		}
+		return $dataObject;
+	}
+
+	/**
+	 * @param int $start
+	 * @param int $limit
+	 * @return array($[CLASS])
+	 */
+	public static function getAll($start, $limit) {
+		$statement = App::getDBO()->prepare('SELECT * FROM ' . self::getTableName() . ' LIMIT ?,?');
+		$statement->bindValue(1, $start, PDO::PARAM_INT);
+		$statement->bindValue(2, $limit, PDO::PARAM_INT);
+		$result = App::getDBO()->query();
+		$dataObjects = array();
+		while ($result && ($row = $result->fetch(PDO::FETCH_ASSOC))) {
+			$dataObjects[] = new $[CLASS]($row);
+		}
+		return $dataObjects;
+	}
+
+}
+
+?>

@@ -1,0 +1,140 @@
+		.headerTable {
+			height:32px;
+			font-family: "Arial Black", Gadget, sans-serif ;
+			font-size: 110% !important ;
+		}
+        .reportsHeader {
+            color: #FFFFFF;
+            font-size: 160%;
+            font-family: "Arial Black", Gadget, sans-serif ;
+            background: -webkit-linear-gradient(0deg, black, gray); 
+			background: -o-linear-gradient(0deg, black, gray); 
+			background: -moz-linear-gradient(0deg, black, gray); 
+			background: linear-gradient(0deg, black, gray); 
+            border-top: 2px solid;
+            border-left: 2px solid;
+            border-right: 2px solid;
+            border-bottom: 2px solid;
+            width: 85%;
+            height:130px;
+            border-radius:20px;
+            text-align: center;
+            margin: auto;
+			box-shadow: 10px 10px 5px #888888;
+        }
+		
+		.reportsHeaderError{
+            color: #FFFFFF;
+            font-size: 160%;
+            font-family: "Arial Black", Gadget, sans-serif ;
+            background: -webkit-linear-gradient(0deg, red, gray); 
+			background: -o-linear-gradient(0deg, red, gray); 
+			background: -moz-linear-gradient(0deg, red, gray); 
+			background: linear-gradient(0deg, red, gray); 
+            border-top: 2px solid;
+            border-left: 2px solid;
+            border-right: 2px solid;
+            border-bottom: 2px solid;
+            width: 85%;
+            height:130px;
+            border-radius:20px;
+            text-align: center;
+            margin: auto;
+			box-shadow: 10px 10px 5px #888888;
+        }
+		.eventName {
+			font-style:italic;
+		}
+        .reportsBody {
+            font-family: "Arial Black", Gadget, sans-serif ;
+            border:2px solid;
+            width: 85%;    
+            color: #000000;
+            background-color: #FFFFFF;
+            border-radius: 25px 25px 25px 25px;
+            text-align: left;
+            margin: auto;
+			box-shadow: 10px 10px 5px #888888;
+        }
+      
+        .headerText {
+            margin: 2%;
+        }
+ 
+        .background {
+          background-color: #D1D1D1;
+        }
+		
+		.footer {
+			text-align:center;
+			padding:20px;
+		}
+		.reportsBody table {
+			margin-left:auto;
+			margin-right:auto;
+			margin-top:30px;
+			margin-bottom:30px;
+			padding :10px;
+			border: 1px solid black;
+			border-spacing: 0;
+			border-collapse: collapse;
+			box-shadow: 10px 10px 5px #888888;
+			cursor:pointer;
+		}
+		
+		.reportsBody td  {
+			font-family: "Arial", Gadget, sans-serif ;
+			text-align:right;
+			width:130px;
+			font-size: 65%;
+			border-left: 1px solid black;
+		}
+		
+		.reportsBody tr:nth-child(odd) td{
+			background-color: #f0f0f0;
+		}
+		
+		.reportsBody th  {
+			font-family: "Arial", Gadget, sans-serif ;
+			width:100px;
+			text-align:center;
+			font-size: 65%;
+			border-bottom: 1px solid white;
+			border-left: 1px solid white;
+			background-color : #000000;
+			background: -webkit-linear-gradient(0deg, black, gray); 
+			background: -o-linear-gradient(0deg, black, gray); 
+			background: -moz-linear-gradient(0deg, black, gray); 
+			background: linear-gradient(0deg, black, gray); 
+			color: #FFFFFF;
+		}
+		.reportsBody th:first-child {
+			border-left: 1px solid black;
+		}
+		
+		.tableTile {
+			font-size: 100%;
+		}
+		
+		.metricField {
+			margin:20px;
+		
+		}
+		.metricField legend {
+			font-family: "Arial", Gadget, sans-serif ;
+			width:360px; 
+			height:35px;
+			font-size: 125%;
+			border: 1px solid black;
+			background-color : #000000;
+			background: -webkit-linear-gradient(0deg, black, gray); 
+			background: -o-linear-gradient(0deg, black, gray); 
+			background: -moz-linear-gradient(0deg, black, gray); 
+			background: linear-gradient(0deg, black, gray); 
+			color: #FFFFFF;
+			box-shadow: 10px 10px 5px #888888;
+		}
+		.metricField legend div {
+			text-align:center;
+			padding-top:5px;
+		}
