@@ -1,6 +1,6 @@
 [global]
-ApplicationName=Digital Leadership Challenge Simulation
+ApplicationName=Interactive-Media-BAH
 AwsCredentialFile=C:\Users\523100\.elasticbeanstalk\aws_credential_file
 DevToolsEndpoint=git.elasticbeanstalk.us-east-1.amazonaws.com
-EnvironmentName=DLCS2
+EnvironmentName=DLCS
 Region=us-east-1
